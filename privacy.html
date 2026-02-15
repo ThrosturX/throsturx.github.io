@@ -10,7 +10,8 @@
     <p><strong>Last Updated: February 2026</strong></p>
 
     <h2>1. The "No Data" Promise</h2>
-    <p>We do not collect, store, or see any of your personal data (names, emails, etc.) on our own servers. Your game progress is stored locally on your device.</p>
+    
+    <p>We do not host your data on private servers. We use Google Firebase to securely sync your game progress and purchases across your devices.</p>
 
     <h2>2. Third-Party "Modular" Services</h2>
     <p>To provide features like ad-removal and gameplay rewards, we integrate industry-standard third-party SDKs. These services may collect device identifiers (like Advertising IDs) and IP addresses to function.</p>
@@ -18,13 +19,19 @@
     <p><strong>Current Active Providers:</strong></p>
     <ul>
         <li><strong>Platform Services:</strong> Google Play Services / Apple App Store Connect (for basic app functionality).</li>
-        <li><strong>In-App Purchases:</strong> Google Play Billing / Apple IAP (to process your "Remove Ads" or "Skins" purchases).</li>
-        <li><strong>Advertising:</strong> [Pending Provider - e.g., AdMob or Unity Ads]. <em>Note: No advertising identifiers are collected until an ad network is integrated.</em></li>
-        </ul>
+        <li><strong>In-App Purchases:</strong> Google Play Billing / Apple IAP (to process your "Remove Ads" or "Addons" purchases).</li>
+        <li><strong>Cloud Sync (Firebase):</strong> To allow you to use your purchased addons across all our games, we use Firebase. This service stores a unique identifier and your list of owned items. All data is encrypted in transit. No real-world identity (like your home address) is ever stored.</li>
+        <li><strong>Advertising (AdMob):</strong> We use Rewarded Ads to unlock content in our "Free" games. AdMob may collect your Advertising ID to ensure you aren't shown the same ad 100 times and to verify that the ad was actually watched.</li>    
+    </ul>
 
-    <h2>3. Your Rights</h2>
-    <p>Since we don't store your data, "deleting your data" is as simple as uninstalling the app or clearing the app cache. For third-party data, you can reset your Advertising ID in your device's System Settings.</p>
-
+    <h2>3. Data Retention & Deletion</h2>
+    <p>We keep your synced data only as long as you have an active account. You can request data deletion at any time by:
+    <ul>
+        <li style='display: hidden'>Using the "Delete Cloud Data" option in the game settings (once it has been implemented).</li>
+        <li>Contacting us at antisthenes.dev@gmail.com.</li>
+    </ul>
+    Once requested, your data will be purged from Firebase within 30 days.</p>
+    
     <h2>4. Target Audience</h2>
     <p>This app is intended for users <strong>aged 18 and older</strong>. We do not knowingly collect information from minors.</p>
 
